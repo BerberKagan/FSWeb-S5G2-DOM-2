@@ -29,13 +29,13 @@ Bu projede sakın **hiçbir dosyayı taşımayın veya adını değiştirmeyin**
 * [ ] Kullanabileceğiniz bazı event çeşitleri şunlardır:
   * [x] `mouseover`
   * [ ] `keydown`
-  * [ ] `wheel`
+  * [x] `wheel`
   * [ ] `load`
   * [ ] `focus`
   * [ ] `resize`
-  * [ ] `scroll`
+  * [x] `scroll`
   * [ ] `select`
-  * [ ] `dblclick`
+  * [x] `dblclick`
   * [ ] `drag / drop`
 
 Not: Drag/drop diğerlerine göre biraz daha alengirli. Bu aslında tek bir tür event türü değil, birkaç farklı tür eventin bir arada çalışması gerekir.

@@ -17,3 +17,37 @@ navSection.addEventListener('mouseout', function(e) {
     e.target.style.backgroundColor = '';
     e.target.style.color = '';
 })
+
+const scroll2Top = document.createElement("div");
+const scrollContent = document.createTextNode("Üste!");
+scroll2Top.appendChild(scrollContent);
+document.body.appendChild(scroll2Top);
+
+scroll2Top.style.backgroundColor = "tomato";
+scroll2Top.style.width = "50px";
+scroll2Top.style.height = "50px";
+scroll2Top.style.position = "fixed";
+scroll2Top.style.bottom = "100px";
+scroll2Top.style.color = "white";
+
+scroll2Top.addEventListener("click", () =>
+  window.scrollTo({ top: 0, behavior: "smooth" })
+);
+
+const tumResimler = document.querySelectorAll("img")
+
+tumResimler.forEach((resim) => {
+  resim.addEventListener("dblclick", (event) => {
+    resim.style.filter = "grayscale(100%)";
+  })
+})
+
+const yazilar = document.querySelectorAll(".destination p")
+
+yazilar.forEach((yazi) => {
+  yazi.addEventListener("wheel", myFunc)
+
+  function myFunc(e) {
+    e.target.style.color = "blue";
+  }
+})
