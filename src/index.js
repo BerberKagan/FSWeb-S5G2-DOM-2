@@ -7,3 +7,13 @@ import './less/index.less'
 
 
 // Kodlar buraya gelecek!
+const navSection = document.querySelector('nav');
+navSection.addEventListener('mouseover', function(e) {
+    e.target.style.backgroundColor = '#ebc034';
+    e.target.style.color = 'white';
+})
+
+navSection.addEventListener('mouseout', function(e) {
+    e.target.style.backgroundColor = '';
+    e.target.style.color = '';
+})
